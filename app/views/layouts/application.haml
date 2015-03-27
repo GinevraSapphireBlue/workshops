@@ -9,4 +9,13 @@
     = javascript_include_tag 'application'
 
   %body
-    = yield
+    %nav.navbar.navbar-default
+      .container-fluid
+        .navbar-header
+          %span.navbar-brand #{AppConfig.workshops_name}
+        %p.navbar-text.navbar-right
+          Links should go here
+    .container-fluid
+      .row
+        .col-lg-12
+          = yield
